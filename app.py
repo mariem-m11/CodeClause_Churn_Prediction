@@ -4,7 +4,7 @@ import pickle
 
 # Load the trained logistic regression model from .sav file
 import os
-model_path = os.path.join(os.getcwd(), 'trained_model.sav')
+model_path = os.path.join(os.getcwd(), 'modelForPrediction.sav')
 model = pickle.load(open(model_path, 'rb'))
 
 
