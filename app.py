@@ -3,7 +3,10 @@ import pandas as pd
 import pickle
 
 # Load the trained logistic regression model from .sav file
-model = pickle.load(open('trained_model.sav', 'rb'))
+import os
+model_path = os.path.join(os.getcwd(), 'trained_model.sav')
+model = pickle.load(open(model_path, 'rb'))
+
 
 # Create the Streamlit app
 def main():
